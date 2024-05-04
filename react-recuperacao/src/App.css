@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.Biblioteca{
+  width: 100%;
+  height: 500px;
+  background-blend-mode: overlay; 
+}
+
+.Galeria img{
+  width: 300px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.Galeria{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 80px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Sinopse{
+  color: black;
+  font-size: large;
+}
+
+.Descricao{
+  font-size: 3vw;
+  color: #000000;
+}
+
+.Livro{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 80px;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 100px;
+}
+
+.Livro img{
+  width: 300px;
+  height: 450px;
+}
+
+header{
+  background-color: #000000;
+  color: white;
+  padding: 20px 80px;
+}
+
+header img{
+  width: 120px;
+}
+
+footer{
+  background-color: #000000;
+  color: white;
+  padding: 20px 80px;
+}
+
+@media screen and (max-width: 600px){
+
+  header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .Galeria img{
+    width: 70vw;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .Galeria{
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+}
